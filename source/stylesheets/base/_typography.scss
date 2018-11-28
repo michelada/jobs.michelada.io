@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800');
+
+@font-face {
+  font-family: 'AvantGarde';
+  src: url('/fonts/AvantGardeLT-Bold.otf');
+  src: url('/fonts/AvantGardeLT-Bold.ttf');
+}
+
+body {
+  color: $dark-grey-blue;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'AvantGarde';
+}
+
+.location {
+  color: $sun-yellow;
+}
+
+
+h1 {
+  font-size: 48px;
+}
+
+.section-title {
+  font-size: 18px;
+}

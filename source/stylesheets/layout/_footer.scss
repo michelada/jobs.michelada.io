@@ -1,0 +1,16 @@
+footer {
+  background-color: $dark-grey-blue;
+  color: $white;
+  position: relative;
+
+  &:after {
+    content: '';
+    background-image: image-url('espuma-azuldown.svg');
+    width: 162px;
+    height: 127px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -127px;
+  }
+}
