@@ -11,6 +11,24 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-dark py-5">
+      <a class="navbar-brand" href="#">
+        <%= image_tag('isotype.svg'); %>
+      </a>
+      <span class="nav-item">
+        <a class="nav-link more-positions" href="#">
+          otras vacantes
+          <%= image_tag('arrow.svg'); %>
+        </a>
+      </span>
+    </nav>
+
     <%= yield %>
+
+    <footer class='text-center bg-blue p-3'>
+      <div>Copyright © 2018 Michelada, LLC. </div><div>All rights reserved.</span>
+    </footer>
+    <button type='button' class='btn btn-apply btn-block' href='#'>aplicar</button>
   </body>
 </html>
