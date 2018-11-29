@@ -1,0 +1,7 @@
+.caret-down {
+  width: 22px;
+
+  @include media-breakpoint-up(sm) {
+    width: 13px;
+  }
+}

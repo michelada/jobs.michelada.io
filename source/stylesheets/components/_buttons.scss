@@ -5,4 +5,14 @@
   font-weight: bold;
   padding: 11px;
   text-align: center;
+
+  &.p-sticky-bottom {
+    bottom: 0;
+    position: sticky;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    border-radius: 3rem;
+  }
 }
