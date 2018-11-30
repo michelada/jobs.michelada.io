@@ -22,7 +22,38 @@
       </a>
       <form class="form-inline">
         <span class="nav-item">
-          <div class="dropdown mr-md-5">
+
+          <div class='d-md-none'>
+            <span type="button" class="more-positions" data-toggle="modal" data-target="#exampleModal">
+              otras vacantes
+              <%= image_tag("arrow.svg", class: 'caret-down') %>
+            </span>
+
+            <div class="modal fade more-positions" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog m-0" role="document">
+                <div class="modal-content bg-info px-2">
+                  <div class="modal-header bg-info py-5 border-0">
+                    <%= image_tag('logo.svg', class: 'modal-title'); %>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <%= image_tag('close.svg') %>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class='mb-4'>vacantes</h4>
+                    <ul>
+                      <li class='list-dotted-item'>
+                        <a href="#">ruby fullstack dev</a>
+                      </li>
+                      <li class='list-dotted-item'>
+                        <a href="#">node JS dev</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown mr-md-5 d-none d-md-block">
             <span class="more-positions" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               otras vacantes
               <%= image_tag("arrow.svg", class: 'caret-down') %>
