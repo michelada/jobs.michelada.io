@@ -9,6 +9,9 @@
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Just an image -->
@@ -19,10 +22,17 @@
       </a>
       <form class="form-inline">
         <span class="nav-item">
-          <a class="nav-link more-positions" href="#">
-            otras vacantes
-            <%= image_tag('arrow.svg', class: 'caret-down'); %>
-          </a>
+          <div class="dropdown mr-md-5">
+            <span class="more-positions" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              otras vacantes
+              <%= image_tag("arrow.svg", class: 'caret-down') %>
+            </span>
+
+            <div class="dropdown-more-positions dropdown-menu p-3 pt-4 mt-4" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">ruby fullstack dev</a>
+              <a class="dropdown-item" href="#">node JS dev</a>
+            </div>
+          </div>
         </span>
         <span class="nav-item d-none d-sm-block">
           <button class="btn btn-apply px-5 ml-3" type="submit">aplicar</button>

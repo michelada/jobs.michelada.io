@@ -1,0 +1,27 @@
+.dropdown-more-positions {
+  background-color: $dark-grey-blue;
+  left: -25%;
+
+  .dropdown-item {
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $dark-grey-blue;
+      color: $sun-yellow;
+    }
+  }
+
+  &:after {
+    background: $dark;
+    content: '';
+    display: block;
+    height: 30px;
+    left: 45%;
+    position: absolute;
+    top: -18px;
+    transform: rotate(45deg);
+    width: 30px;
+  }
+}
