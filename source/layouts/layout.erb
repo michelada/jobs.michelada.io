@@ -33,8 +33,43 @@
 
     <%= yield %>
 
-    <footer class='text-center bg-blue p-3'>
-      <div>Copyright © 2018 Michelada, LLC. </div><div>All rights reserved.</span>
+    <footer class="px-3 px-lg-8 py-4">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>michelada.io</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <address>
+            info@michelada.io
+          </address>
+        </div>
+        <div class="col-sm-5">
+          <p>We <a href="https://sipsandbits.com" target="_blank" data-ga-label="blog">blog</a> about things we like.</p>
+        </div>
+        <div class="col-sm-2 social">
+          <ul class='list-unstyled list-inline float-right'>
+            <li class="list-inline-item">
+              <a href="http://www.twitter.com/micheladaio">
+                <%= image_tag('ic-social-twitter.svg'); %>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://github.com/michelada">
+                <%= image_tag('ic-social-github.svg'); %>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <p>
+          Copyright © 2018 Michelada, LLC. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
     <button type='button' class='btn btn-apply btn-block d-lg-none p-sticky-bottom' href='#'>aplicar</button>
   </body>
