@@ -11,6 +11,10 @@ $danger: $tomato;
 $info: $dark-grey-blue;
 $border-radius: 0;
 
+$modal-transition: transform .1s ease-out !default;
+$transition-fade: opacity .05s linear !default;
+
+
 $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
