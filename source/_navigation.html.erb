@@ -1,0 +1,57 @@
+<nav class="navbar navbar-light bg-dark site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <%= image_tag('isotype.svg', class: 'd-md-none'); %>
+      <%= image_tag('logo.svg', class: 'd-none d-md-block'); %>
+    </a>
+    <form class="form-inline">
+      <span class="nav-item">
+
+        <div class='d-md-none'>
+          <span type="" class="more-positions" data-toggle="modal" data-target="#positionsModal">
+            otras vacantes
+            <%= image_tag("arrow.svg", class: 'caret-down') %>
+          </span>
+
+          <div class="modal fade more-positions" id="positionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog m-0" role="document">
+              <div class="modal-content bg-info px-2">
+                <div class="modal-header bg-info py-5 px-1 border-0">
+                  <%= image_tag('logo.svg', class: 'modal-title'); %>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <%= image_tag('close.svg') %>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class='mb-4'>vacantes</h4>
+                  <ul>
+                    <li class='list-dotted-item'>
+                      <a href="#">ruby fullstack dev</a>
+                    </li>
+                    <li class='list-dotted-item'>
+                      <a href="#">node JS dev</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown mr-md-4 d-none d-md-block">
+          <span class="more-positions" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            otras vacantes
+            <%= image_tag("arrow.svg", class: 'caret-down') %>
+          </span>
+
+          <div class="dropdown-more-positions dropdown-menu p-3 pt-4 mt-4" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">ruby fullstack dev</a>
+            <a class="dropdown-item" href="#">node JS dev</a>
+          </div>
+        </div>
+      </span>
+      <span class="nav-item d-none d-sm-block">
+        <button class="btn btn-apply px-5 ml-3" type="submit">aplicar</button>
+      </span>
+    </form>
+  </div>
+</nav>

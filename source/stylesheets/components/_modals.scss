@@ -1,10 +1,6 @@
 .modal.more-positions {
   font-size: 20px;
 
-  a {
-    color: $white;
-  }
-
   li:before {
     background-color: $white;
   }
@@ -14,8 +10,8 @@
   }
 
   .close {
-    top: 13px;
     opacity: 1;
     position: relative;
+    top: 13px;
   }
 }

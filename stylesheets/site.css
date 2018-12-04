@@ -140,13 +140,13 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
-    text-decoration: underline; }
+    color: #f9d026;
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -463,7 +463,10 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 798px; } }
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
 
 .container-fluid {
   width: 100%;
@@ -2496,15 +2499,15 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #fff;
   background-color: transparent; }
   .btn-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #f9d026;
+    text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
+    text-decoration: none;
     border-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -3929,12 +3932,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #fff;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #0056b3;
+    color: #f9d026;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -8352,7 +8355,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'AvantGarde'; }
+  font-family: 'AvantGarde', sans-serif; }
 
 .location {
   color: #f9d026; }
@@ -8373,6 +8376,7 @@ footer {
   position: relative; }
   footer:after {
     background-image: url("/images/espuma-azuldown.svg");
+    background-size: cover;
     content: '';
     display: block;
     height: 127px;
@@ -8380,14 +8384,29 @@ footer {
     right: 0;
     top: -127px;
     width: 162px; }
+    @media (min-width: 768px) {
+      footer:after {
+        height: 254px;
+        top: -254px;
+        width: 324px; } }
   footer a {
     color: #f9d026; }
 
 .more-positions {
   color: #fff;
+  cursor: pointer;
   font-size: 18px;
-  font-weight: bold;
-  cursor: pointer; }
+  font-weight: bold; }
+
+.site-nav {
+  padding: 40px 16px; }
+  @media (min-width: 768px) {
+    .site-nav {
+      padding: 13px 16px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1; } }
 
 ul {
   list-style: none;
@@ -8407,11 +8426,12 @@ ul {
     height: 8px;
     left: -15px;
     position: absolute;
-    top: 7px;
+    top: .55em;
     width: 8px; }
     @media (min-width: 576px) {
       .list-dotted-item:before {
-        left: -23px; } }
+        left: -23px;
+        top: .4em; } }
   .red-dots .list-dotted-item:before {
     background-color: #eb5b49; }
 
@@ -8455,16 +8475,14 @@ ul {
 
 .modal.more-positions {
   font-size: 20px; }
-  .modal.more-positions a {
-    color: #fff; }
   .modal.more-positions li:before {
     background-color: #fff; }
   .modal.more-positions .modal-content {
     height: 100vh; }
   .modal.more-positions .close {
-    top: 13px;
     opacity: 1;
-    position: relative; }
+    position: relative;
+    top: 13px; }
 
 .caret-down {
   width: 22px; }

@@ -19,11 +19,12 @@ ul {
     height: 8px;
     left: -15px;
     position: absolute;
-    top: 7px;
+    top: .55em;
     width: 8px;
 
     @include media-breakpoint-up(sm) {
       left: -23px;
+      top: .4em;
     }
   }
 

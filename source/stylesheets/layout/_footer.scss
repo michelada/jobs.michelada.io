@@ -6,6 +6,7 @@ footer {
 
   &:after {
     background-image: image-url('espuma-azuldown.svg');
+    background-size: cover;
     content: '';
     display: block;
     height: 127px;
@@ -13,6 +14,12 @@ footer {
     right: 0;
     top: -127px;
     width: 162px;
+
+    @include media-breakpoint-up(md) {
+      height: 127px * 2;
+      top: -127px * 2;
+      width: 162px * 2;
+    }
   }
 
   a {
